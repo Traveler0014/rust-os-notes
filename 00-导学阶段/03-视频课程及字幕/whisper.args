@@ -1,0 +1,12 @@
+whisper --temperature_increment_on_fallback None \
+ --condition_on_previous_text False \
+ --beam_size 15 \
+ --patience 1.0 \
+ --compression_ratio_threshold 3.0 \
+ --logprob_threshold 0.0 \
+ --no_speech_threshold 0.7 \
+ --word_timestamps True \
+ --max_words_per_line 25 \
+ --output_format srt \
+ --model medium \
+ --language zh
