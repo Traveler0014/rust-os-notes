@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (Attach)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/dingle/code/github.com/rcore-os/rCore-Tutorial-v3/os/target/riscv64gc-unknown-none-elf/release/os",
+            "miDebuggerServerAddress": "127.0.0.1:1234",
+            "miDebuggerPath": "/home/dingle/opt/cross/bin/riscv64-unknown-elf-gdb",
+            "MIMode": "gdb",
+            "cwd": "${workspaceRoot}",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Architecture specific setup",
+                    "text": "set arch riscv:rv64",
+                }
+            ]
+        }
+    ]
+}
